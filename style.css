@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: auto; */
+  margin-top: 200px;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+
+  margin: auto;
+  padding: 10px;
+}
+
+.container-image1 {
+  display: flex;
+  justify-content: center;
+
+  background-image: linear-gradient(to bottom, rgba(245,166,35,0.4) 0%, rgba(245,166,35,0.4) 100%),  url(./Assets/Escritório.jfif);
+  background-position-x: 100%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  
+
+  
+  width: 350px;
+  height: 550px; 
+}
+
+#image-logo {
+  margin-top: 85px;
+  width: 190px;
+  height: 180px;
+}
+
+
+.container-text {
+  display: flex;
+  justify-content: top;
+  align-items: top; 
+  flex-direction: column;
+
+  width: 330px;
+  padding-left: 20px;
+}
+
+.container-text > H1 {
+  font-size: 30px;
+}
+
+#header {
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  font-family: sans-serif;
+}
+
+#subheader {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 25px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#highlight {
+  display: inline;
+  padding: .10em 0;
+  background: #f4a224;
+  box-shadow: .5em 0 0 #f4a224, -.5em 0 0 #f4a224;
+}
+
+.close-button {
+  /* display: inline-block; */
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 15px 0px 5px 0;
+  vertical-align: top;
+  /* position: absolute;
+  right: 0; */
+
+  background-color: transparent;
+  border-color: transparent;
+
+}
+
+.x-image {
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+  height: 350px;
+  margin-top: 10px;
+}
+
+form > input {
+  border-radius: 12px;
+  border-width: 0px;
+  height: 25px;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+input:focus {
+  outline: none;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* margin-top: 10px; */
+  height: 230px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color:rgba(0, 0, 0, 0.661)
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+
+#submit-button {
+  height: 50px;
+  width: 320px;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: #f4a224;
+  color: #fff;
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+}
+
+#submit-button:hover {
+  background: #f39913;
+}
+
+#submit-button:active {
+  box-shadow: inset 1px 0px 1px 1px rgba(0, 0, 0, 0.14);
+}
