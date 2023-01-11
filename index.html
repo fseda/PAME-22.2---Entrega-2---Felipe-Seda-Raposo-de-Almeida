@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script src="index.js" async></script>
+
   <link rel="stylesheet" href="style.css">
-  
+    
   <!-- Colocar logo da Fluxo como favicon -->
   <link rel="icon" href="./Assets/Logo Fluxo.webp"> 
 
@@ -18,11 +20,19 @@
         <img src="./Assets/Logo Fluxo.webp" alt="Logo Fluxo" id="image-logo">
     </div>
     <div class="container-text">
+
+      <div id="container-success">
+        <p><strong>Sua interesse foi registrado!</strong></p>
+      </div>
+      <div id="container-error">
+        <p><strong>Preencher Nome e Email!</strong></p>
+      </div>
+
       <h1 id="header">Não vá embora agora!</h1>
       <p id="subheader"><span id="highlight">O processo até agora tem agregado muito para o meu desenvolvimento pessoal, tanto em softskills como as hardskills. Tenho aprendido bastante, e espero que continue assim até o final.</span></p>
-      <form>
-        <input type="text" name="Name" placeholder="Nome *">
-        <input type="text" name="Email" placeholder="Email *">
+      <form onsubmit="return showMessage()" id="main-form">
+        <input type="text" name="Name" placeholder="Nome *" id="name" required>
+        <input type="text" name="Email" placeholder="Email *" id="email" required>
         <div class="checkboxes">
           <legend>Áreas de interesse</legend>
           <div>
@@ -59,7 +69,7 @@
           </div>      
         </div>
         <div class="div-button">
-          <button id="submit-button"><strong>TENHO INTERESSE</strong></button>
+          <button type="button" id="submit-button" onclick="sendMessage()"><strong>TENHO INTERESSE</strong></button>
         </div>
       </form>
     </div>
