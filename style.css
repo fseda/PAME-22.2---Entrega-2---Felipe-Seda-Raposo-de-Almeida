@@ -39,37 +39,30 @@ body {
   height: 180px;
 }
 
-#container-success {
+.alert {
   display: none;
   justify-content: center;
   align-items: center;
   
-  /* background-color: rgb(78, 184, 249); */
   border-radius: 5px;
-  border-color:#f4a224;
-  border-style: solid;
-  width: 250px;
-  height: 30px;
-  font-family: arial, sans-serif;
-}
-
-#container-error {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  
-  background-color: rgb(255, 52, 52);
-  border-radius: 5px;
-  border-color: black;
   border-style: solid;
   border-width: 1px;
   width: 250px;
   height: 30px;
   font-family: arial, sans-serif;
-  color: white;
 }
 
+#alert-success {
+  background-color: #f2ebde;
+  border-color: #e0cfba;
+  color: #a97242;
+}
 
+#alert-error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
 
 .container-text {
   display: flex;

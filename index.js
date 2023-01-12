@@ -2,8 +2,8 @@ function sendMessage() {
   const name = document.getElementById('name');
   const email = document.getElementById('email');
 
-  const success_message = document.getElementById('container-success');
-  const error_message = document.getElementById('container-error');
+  const success_message = document.getElementById('alert-success');
+  const error_message = document.getElementById('alert-error');
 
   console.log(name.value);
   console.log(email.value);
@@ -11,6 +11,8 @@ function sendMessage() {
   if (name.value && email.value) {
     error_message.style.display = 'none';
     success_message.style.display = 'flex';
+
+    console.log('here');
 
     document.getElementById('main-form').reset();
        
