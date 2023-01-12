@@ -4,24 +4,31 @@ function sendMessage() {
 
   const success_message = document.getElementById('alert-success');
   const error_message = document.getElementById('alert-error');
-
-  console.log(name.value);
-  console.log(email.value);
+  const body = document.getElementById('body');
 
   if (name.value && email.value) {
     error_message.style.display = 'none';
     success_message.style.display = 'flex';
 
-    console.log('here');
-
     document.getElementById('main-form').reset();
        
     setTimeout(() => {
       success_message.style.display = 'none';
+      if (error_message.style.display !== 'flex') {
+        body.style.marginTop = '200px';
+      }
     }, 5000); 
+
   } else {
     success_message.style.display = 'none';
     error_message.style.display = 'flex';
   }
+
+  let alert_height = getComputedStyle(success_message).height;
+  alert_height = alert_height.slice(0, alert_height.length - 2);
+
+  if (success_message.style.display == 'flex' || error_message.style.display == 'flex') {
+    body.style.marginTop = '168px';
+  } 
 }
 
